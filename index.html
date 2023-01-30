@@ -1,218 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>|Rajan Gaire|</title>
-    <!-- Css linking -->
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
-
 <body>
-    <div class="upper-body" id="home">
-        <!-- heading starts -->
-        <header>
-            <!-- navigation inside header -->
-            <nav>
-                <div class="nav">
-                    <div class="heading">
-                        <h1>Rajan <span>Gaire</span></h1>
-                    </div>
-                    <div class="nav-items">
-                        <a href="#home">Home</a>
-                        <a href="#about">About-Me</a>
-                        <a href="#skill">Skills</a>
-                        <a href="#contact">Contact-Me</a>
-                    </div>
-                </div>
-            </nav>
-            <!-- navigation ends -->
-        </header>
-        <!-- header ends -->
-
-        <!-- main part starts -->
-        <main>
-            <div class="img">
-                <img src="/WebDevelopment/images/cover.jpg" alt="">
-            </div>
-            <div class="text">
-                <p>Hello Visitor.</p>
-            </div>
-            <div class="heading">
-                <h1>
-                    I'm Rajan Gaire.
-                </h1>
-            </div>
-            <div class="content">
-                | FrontEnd Developer |
-            </div>
-        </main>
+<div id="header">
+    <div class="container">
+        <nav> 
+            <img src="images/logo.png.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h2> A BCA Student</h2>
+            <h1>I'am<span> Rajan</span><br> Gaire</h1>
+        </div>
     </div>
-    <div class="mid">
-        <div id="about" class="about">
-            <div class="heading">
-                <h1>About-Me</h1>
-            </div>
-            <div class="mid-cnt">
-                <img class="abt-img" src="./images/me.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis voluptates itaque obcaecati
-                    illum ab iure vel explicabo, at, suscipit quos quod cumque quibusdam molestias? Tempore aliquam fuga
-                    aliquid nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente error quod in quam.
-                    Laboriosam placeat eaque quas sequi explicabo eligendi ratione nisi repellat! Expedita nobis atque
-                    ratione eveniet, blanditiis modi? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Exercitationem commodi, cumque atque unde, aspernatur, alias minus voluptatibus veniam voluptatum
-                    iusto esse vero eius eveniet hic ipsum! Rem quas earum voluptatibus?</p>
-            </div>
+</div>    
+<!-----------about------- ---->
+<div id="about">
+    <div class="container"></div>
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/user2.png.jpg" >
 
-            <div class="table">
-                <table>
-                    <th class="th">Profile</th>
-                    <th class="th">Skills</th>
-                    <tr>
-                        <td>
-                            <span>Name:</span> Rahul Bashyal.
-                        </td>
-                        <td>
-
-                            <label for="file">HTML:</label>
-                            <progress id="file" value="82" max="100"> 82% </progress>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span> Email:</span>bashyalrahul90876@gmail.com
-                        </td>
-                        <td>
-                            <label for="file">CSS:</label>
-                            <progress id="file" value="76" max="100"> 76% </progress>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Phone:</span> 9840041325
-                        </td>
-                        <td>
-                            <label for="file">BOOTSTRAP:</label>
-                            <progress id="file" value="62" max="100"> 62% </progress>
-                        </td>
-                    </tr>
-                    <tr>
-
-                        <td>
-                            <span>Address:</span> Butwal-10, Kalikanagar.
-                        </td>
-                        <td>
-                            <label for="file">JavaScript:</label>
-                            <progress id="file" value="22" max="100"> 22% </progress>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>DOB:</span> 2002/04/25
-                        </td>
-                        <td>
-                            <label for="file">Java:</label>
-                            <progress id="file" value="20" max="100">20%</progress>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <label for="file">C</label>
-                            <progress id="file" value="90" max="100">90%</progress>
-                        </td>
-                    </tr>
-                </table>
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me </h1>
+            <p>Hi there! I'm Rajan, a student of CCT. I have a passion for coding and web development stuff and I am planning to dedicate myself doing this. As I am new to this field, I don’t have much experience in this field. But believe me I am very dedicated to my work as I believe in hard work and strive to use my skills to make a positive impact in my work and the world. In my free time, you can find me writing lyrics and enjoying my own company. I'm always open to new opportunities and collaborations, so feel free to reach out to me!</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link">Qualification</p>
+            </div> 
+            <div class="tab-contents"></div>
+            <ul>
+                <li><span>Academics</span><br>1) Schooling from Deep Boarding High School<br>2) Studying BCA at Crimson College Of Technology</li>
+                <li><span>Skills</span><br>HTML & CSS</li>
+            </ul>
+        </div>
+       
+    </div>
+</div>
+<!-----------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane-top"></i> rajangaire92@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>9867343020</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <div class="btn">
-                <a href="https:instagram.com/rahulbashyal/" target="_blank">DM ME</a>
-                <a href="">Know more</a>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email"name="email" placeholder="Your Email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
             </div>
         </div>
     </div>
-    <div id="skill" class="skill">
-        <div class="heading">
-            <h1>My works</h1>
-        </div>
-
-        <!-- cards -->
-        <div class="col">
-            <div class="card">
-                <img class="card-img" src="./images/nepaldental.png" alt="">
-                <div class="container">
-                    <h3 class="card-txt">Nepal Dental Home</h3>
-                    <p class="card-txt">Your complete mouth care</p>
-                    <div class="btn">
-                        <a href="https:nepaldentalhome.com.np">Click me</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="./images/matrixsecurity.png" alt="">
-                <div class="container">
-                    <h3 class="card-txt">Matrix Security</h3>
-                    <p class="card-txt">Complete Cyber security</p>
-                    <div class="btn">
-                        <a href="https:nepaldentalhome.com.np">Click me</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="./images/Travelnepal.png" alt="">
-                <div class="container">
-                    <h3 class="card-txt">Travel Nepal</h3>
-                    <p class="card-txt">Your pocket Guide</p>
-                    <div class="btn">
-                        <a href="https:nepaldentalhome.com.np">Click me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="copyright">
+        <p>Copyright © Rajan Gaire. All Rights Reserved</p>
     </div>
-
-    <div class="last">
-        <div id="contact" class="contact">
-            <div class="heading">
-                <h1>Contact Me</h1>
-            </div>
-            <div class="text">
-                Don't hessitate to contact me
-            </div>
-            <form class="form">
-                <input class="up" type="text" placeholder="Username">
-                <input class="up" type="email" placeholder="Your Email">
-                <br>
-                <input class="down" type="text" placeholder="Subject">
-                <br>
-                <input class="down" type="text" placeholder="Enter your message here...">
-                <br>
-               
-            </form>
-            <div class="btn">
-                <a href="">Send</a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="logo">
-                <a href=""><img class="logos" src="./images/logo/facebook.png" alt="facebook"></a>
-                <a href=""><img class="logos" src="./images/logo/github.png" alt="github"></a>
-                <a href=""><img class="logos" src="./images/logo/insta.png" alt="instagram"></a>
-                <a href=""><img class="logos" src="./images/logo/linkedin.png" alt="linkdian"></a>
-            </div>
-            <div class="content">
-                <h5>Privacy | Terms | FAQs | Help</h5>
-            </div>
-            <div class="text">
-                <h4>© (Rahul Bashyal). All Rights Reserved. Designed by (Rahul Bashyal)</h4></div>
-        </div>
-    </footer>
+</div>
 </body>
-
 </html>
