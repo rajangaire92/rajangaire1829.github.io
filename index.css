@@ -197,6 +197,6 @@ form .btn2{
 }
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phonebackground1.png.jpg);
+        background-image: url(phonebackground1.png.jpg);
     }   
 }
