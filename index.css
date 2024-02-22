@@ -1,73 +1,202 @@
-.love{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: rgb(61, 2, 2);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-weight: bold;
-    font-size: 30px;
-    color: pink;
- 
-}
 *{
-    background: rgb(228, 109, 109);
+    margin: 0;
+padding: 0;
+font-family: 'Poppins',sans-serif;
+box-sizing: border-box;
+
 }
-img{
-    border-radius: 20px;
-    width: 400px;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color:#fff;
+}
+#header{
+    width: 100%;
+    height: 150vh;
+    background-image: url(background0.png.jpg);
+    background-size: 100%;
+    background-position: right;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 300px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(12, 36, 255);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'' ;
+    width: 0%;
+    height: 3px;
+    background: #ec1010;
+    position: absolute;
+    left: 0;    
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 25%;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 80px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: rgba(15, 193, 233, 0.9);
+}
+/*--------about------- ----*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+
+}
+.row{
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
 
 }
-.img1{
-    text-align: center;
+.about-col-2 {
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font: weight 600px;;
+    color: #fff;
+}
+.tab-titles{
     display: flex;
-    align-items: top;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-il1{
-    padding-left: 50px;
-    font-weight: bold;
-    padding-top: 100px;
-    font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: pink;
+    margin: 20px 0 40px;
 
 }
-.img2{
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #fb00ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style-position: inside;
+    margin: 20px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+/*------contactleft*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transfor 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+
+}
+.btn.btn2{
+    display: inline-block;
+    background:#ff004f;
+    text-decoration: none;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
     text-align: center;
-    display: flex;
-    align-items: top;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-il2{   
-    padding-left:250px ;
-    font-weight: bold;
-    padding-top: 200px;
-    font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: pink;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
     
-
 }
-.img3{
-    text-align: center;
-    display: flex;
-    align-items: top;
-    padding-left: 20px;
-    
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/phonebackground1.png.jpg);
+    }   
 }
-il3{
-    padding-left:180px ;
-    font-weight: bold;
-    padding-top: 200px;
-    font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: pink;
-}
-
